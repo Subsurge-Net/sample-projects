@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Subsurge Login Demo Extension",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "identity"
+    ],
+
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+}

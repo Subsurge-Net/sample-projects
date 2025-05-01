@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Extension</title>
+
+</head>
+
+<body>
+    <h3>Subsurge Demo Extension</h3>
+    <div id="loading-page" class="page" style="display: block;">
+        <div class="loading-container">
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+    <div id="login-page" class="page" style="display: none;">
+        <div class="login-container" id="loginWithGoogle">
+            <!-- Login with Google -->
+            <input type="button" class="login-button" id="login-google" value="Login with Google">
+        </div>
+        <div class="login-container" id="loginWithAuth0">
+            <!-- Login with Auth0 -->
+            <input type="button" class="login-button" id="login-auth0" value="Login with Auth0">
+        </div>
+    </div>
+
+    <div id="main-page" class="page" style="display: none;">
+        <div id="userInfo"></div>
+        <div id="appInfo"></div>
+
+        <div id="createPaymentLink"> 
+            <input type="button" class="button" id="createPaymentLink" value="Buy tokens">
+        </div>
+        <div id="logout-container">
+            <input type="button" class="logout-button" id="logout" value="Logout">
+        </div>
+    </div>
+
+
+    <script src="index.iife.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

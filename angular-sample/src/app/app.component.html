@@ -1,0 +1,12 @@
+<h1>Subsurge Angular Sample</h1>
+
+<ng-container *ngIf="!loggedIn">
+  <h2>Login</h2>
+  <div #gbutton></div>
+
+</ng-container>
+
+<ng-container *ngIf="loggedIn">
+  Welcome {{user?.email}}
+  <button (click)="logout()">Logout</button>
+</ng-container>
